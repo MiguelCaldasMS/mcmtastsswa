@@ -32,10 +32,10 @@ jobs:
       - name: Validate Static Web Apps deployment token
         shell: bash
         env:
-          SWA_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          SWA_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_YELLOW_WAVE_0E4D8D403 }}
         run: |
           if [ -z "$SWA_TOKEN" ]; then
-            echo "::error::AZURE_STATIC_WEB_APPS_API_TOKEN is empty or unavailable"
+            echo "::error::AZURE_STATIC_WEB_APPS_API_TOKEN_YELLOW_WAVE_0E4D8D403 is empty or unavailable"
             exit 1
           fi
           echo "Deployment token is available"
